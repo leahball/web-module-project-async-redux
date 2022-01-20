@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const GifCard = styled.div`
-  background-color: #e843eb;
+  background-color: white;
   display: flex;
   flex-direction: row;
   padding: 2%;
@@ -12,10 +12,9 @@ const GifInfo = styled.div`
   padding: 2%;
   display: flex;
   flex-direction: column;
-  font-family: Rubik;
   h3 {
-    font-size: 3rem;
-    color: white;
+    font-size: 2rem;
+    color: black;
   }
   p {
     font-weight: 500;
@@ -28,7 +27,7 @@ const Gif = (props) => {
 
   return (
     <GifCard>
-      <img width="300" src={gif.images.original.url} />
+      <img width="200" src={gif.images.original.url} />
       <GifInfo>
         <h3>{gif.title}</h3>
         <p>{gif.username}</p>
